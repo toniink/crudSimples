@@ -1,0 +1,34 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    }
+    input, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    }
+    /* � Responsividade para telas menores */
+    @media (max-width: 600px) {
+    input, button {
+    width: 100%;
+    }
+    }
+
+    * Estilização do container principal */
+.container {
+max-width: 500px;
+margin-top: 50px;
+background: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mensagem de sucesso ou erro */
+#mensagem {
+display: none;
+font-weight: bold;
+margin-top: 10px;
+}
