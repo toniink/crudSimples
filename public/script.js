@@ -14,15 +14,16 @@ function carregarUsuarios() {
 
                 // Criando botão de edição
                 const btnEditar = document.createElement("button");
-                btnEditar.textContent = "Editar";
+                btnEditar.innerHTML = '<i class="bi bi-pencil-square fs-6"></i>'
                 btnEditar.classList.add("btn", "btn-warning", "btn-sm");
                 btnEditar.onclick = () => editarUsuario(usuario.id, usuario.nome);
 
                 // Criando botão de remoção
-                const btnDeletar = document.createElement("button");
-                btnDeletar.textContent = "Excluir";
-                btnDeletar.classList.add("btn", "btn-danger", "btn-sm");
-                btnDeletar.onclick = () => deletarUsuario(usuario.id);
+       // Criando botão de remoção
+const btnDeletar = document.createElement("button");
+btnDeletar.innerHTML = '<i class="bi bi-trash fs-6"></i>'; // Ícone de lixeira
+btnDeletar.classList.add("btn", "btn-outline-danger", "btn-sm");
+btnDeletar.onclick = () => deletarUsuario(usuario.id);
 
                 // Criando um container para os botões
                 const divBotoes = document.createElement("div");
